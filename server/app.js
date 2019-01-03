@@ -6,6 +6,12 @@ var logger = require('morgan');
 
 const grapghqlHTTP = require('express-graphql');
 const schema = require("./schema/schema");
+const mongoose = require("mongoose");
+
+mongoose.connect('mongodb://localhost:27017/graphql',
+    {useNewUrlParser: true});
+mongoose.set('debug', true);
+
 
 
 var indexRouter = require('./routes/index');
