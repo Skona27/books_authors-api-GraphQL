@@ -1,4 +1,4 @@
-# movies-restfulAPI
+# books and authors GraphQL API
 Books and Authors GraphQL API built with NodeJS, Express, MongoDB, from YT online course by The Net Ninja.
 
 
@@ -13,7 +13,6 @@ What things you need to install the software and how to install them
 ```
 NodeJS and NPM package manager
 
-
 ```
 
 ### Installing
@@ -26,15 +25,12 @@ Install all dependencies
 npm i
 ```
 ```
-
 Run application and open the browser.
-
 ```
 npm start
 
 ```
 http://localhost:3000/grapiql
-
 ```
 
 ## TODO
