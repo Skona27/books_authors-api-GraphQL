@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var cors = require("cors");
 
 const grapghqlHTTP = require('express-graphql');
 const schema = require("./schema/schema");
@@ -17,6 +18,9 @@ mongoose.set('debug', true);
 var indexRouter = require('./routes/index');
 
 var app = express();
+
+// allow cors
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
